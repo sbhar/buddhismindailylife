@@ -1,0 +1,29 @@
+<html>
+<body id="bodyx">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="domJSON.js"></script>
+<script>
+$(function(){
+	var Title="";
+	var Titleauthor = "";
+	$.get("https://raw.githubusercontent.com/sbhar/buddhismindailylife/master/sgi.json").done(function (data) {
+		//console.log(data);
+		var obj = $.parseJSON(data);
+		//console.log(o);
+		//var someDOMElement = document.getElementById('gitacommentresults');
+		var DOMDocumentFragment = domJSON.toDOM(obj);
+		//someDOMElement.parentNode.replaceChild(DOMDocumentFragment, someDOMElement);
+		$('#gitacommentresults').html(DOMDocumentFragment);
+	}); 
+	
+	
+	
+});
+</script>
+
+<div id="gitacommentresults" align="center"></div>
+</body>
+</html>
