@@ -1,5 +1,245 @@
-<html>
-<body id="bodyx">
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="jquery-3.2.1.js"></script>
+<script src="bootstrap.min.js"></script>
+<style>
+	#buddhism {
+		padding:8px;
+	}
+    #buddhism .card,
+    #buddhism .card-header,
+    #buddhism h5.mb-0 {
+      margin-bottom: 0;
+      padding-bottom: 0
+    }
+
+    #buddhism h5.mb-0,
+    #buddhism h1 {
+      text-align: center
+    }
+
+    #buddhism .card-block {
+      height: 500px;
+    }
+
+    #buddhism .imgRight {
+      float: right
+    }
+
+    #buddhism cite {
+      display: block
+    }
+
+    @media (max-width:680px) {
+      #buddhism img,
+      #buddhism cite,
+      #buddhism .imgRight {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+      }
+      #buddhism .card-block p .pos-right {
+        float: none!important;
+      }
+    }
+
+    #buddhism .card-block {
+      margin: 0 auto;
+      padding: 5px 0 0;
+      width: 100%;
+    }
+
+    #buddhism .card-block h2 {
+      margin: 0 0 50px
+    }
+
+    #buddhism .card-block p {
+      padding: 0 0 30px
+    }
+
+    #buddhism .card-block p .pos-left {
+      float: left;
+      margin: 0 80px 80px 0
+    }
+
+    #buddhism .card-block p .pos-right {
+      float: right;
+      margin: 0 0 80px 80px
+    }
+
+    #buddhism .card-block p .ogp-box {
+      display: block;
+      width: 300px
+    }
+
+    #buddhism .card-block p .ogp-box span {
+      display: block
+    }
+
+    #buddhism .card-block p .ogp-box .name {
+      margin: 5px 0 0;
+      text-align: right
+    }
+
+    #buddhism .card-block p .ogp-box .text {
+      margin: 5px 0 0
+    }
+
+    #buddhism .card-block>blockquote {
+      display: block;
+      margin: 80px 80px 80px 0;
+      width: 300px;
+      position: relative;
+      float: left
+    }
+
+    #buddhism .card-block>blockquote>.text {
+      display: block;
+      padding: 0 40px 0 50px;
+      width: 210px
+    }
+
+    #buddhism .card-block>blockquote>.mark01 {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 32px;
+      height: 23px;
+      background: url(http://assets1.sgi.org/assets/templates/sgi/images/all-img-01.png) no-repeat -334px -383px
+    }
+
+    #buddhism .card-block>blockquote>.mark02 {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 32px;
+      height: 23px;
+      background: url(http://assets1.sgi.org/assets/templates/sgi/images/all-img-01.png) no-repeat -368px -383px
+    }
+
+    #buddhism .card-block>p>a.story-box-01 {
+      display: block;
+      margin-top: 15px;
+      width: 240px;
+      border: 1px solid;
+      position: relative
+    }
+
+    #buddhism .card-block>p>a.story-box-01.orange {
+      border-color: #F09835
+    }
+
+    #buddhism .card-block>p>a.story-box-01.orange span.title {
+      background-color: #F09835
+    }
+
+    #buddhism .card-block>p>a.story-box-01.blue {
+      border-color: #171B5E
+    }
+
+    #buddhism .card-block>p>a.story-box-01.blue span.title {
+      background-color: #171B5E
+    }
+
+    #buddhism .card-block>p>a.story-box-01.gray {
+      border-color: #EFEEE8;
+      background-color: #EFEEE8
+    }
+
+    #buddhism .card-block>p>a.story-box-01.gray span.title {
+      background-color: #EFEEE8
+    }
+
+    #buddhism .card-block>p>a.story-box-01 span.title {
+      display: block;
+      text-align: center
+    }
+
+    #buddhism .card-block>p>a.story-box-01 span.img {
+      display: block
+    }
+
+    #buddhism .card-block>p>a.story-box-01 span.img img {
+      width: 100%;
+      height: auto
+    }
+
+    #buddhism .card-block>p>a.story-box-01 span.text {
+      display: block;
+      padding: 10px
+    }
+
+    #buddhism .card-block>p>a.story-box-01 span.name {
+      display: block;
+      padding: 2px 10px 10px 10px
+    }
+
+    #buddhism .card-block>p>a.story-box-01 span.over {
+      overflow: hidden;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 40px 11px 11px 11px;
+      background: url(http://assets1.sgi.org/assets/templates/sgi/images/bg-over-01.png) repeat left top;
+      filter: alpha(opacity=0);
+      -moz-opacity: 0;
+      opacity: 0
+    }
+
+    #buddhism .card-block>p>a.story-box-01:hover span.over {
+      filter: alpha(opacity=100);
+      -moz-opacity: 1.0;
+      opacity: 1.0
+    }
+
+    #buddhism .card-block>ul,
+    #buddhism .card-block>ol {
+      padding: 0 0 40px
+    }
+
+    #buddhism .card-block>ul {
+      list-style: none
+    }
+
+    #buddhism .card-block>ol {
+      list-style-type: decimal;
+      padding-left: 40px
+    }
+
+    #buddhism .card-block>ul li {
+      padding-left: 1.3em;
+      text-indent: -1.3em
+    }
+
+    #buddhism .card-block>ul li:before {
+      content: "●";
+      margin-right: 0.7em
+    }
+
+    #buddhism .card-block>ul.orange li:before {
+      color: #f0a125
+    }
+	#buddhism .collapse.in {
+		display: block!important;
+	}
+	#buddhism .card, #buddhism .card-header {
+		border:none;
+		border-radius:0;
+	}
+  </style>
+</head>
+<body>
 <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
@@ -7,23 +247,24 @@
   <script src="domJSON.js"></script>
 <script>
 $(function(){
-	var Title="";
-	var Titleauthor = "";
 	$.get("https://raw.githubusercontent.com/sbhar/buddhismindailylife/master/sgi.json").done(function (data) {
+	//$.get("sgi.json").done(function (data) {
 		//console.log(data);
 		var obj = $.parseJSON(data);
-		//console.log(o);
-		//var someDOMElement = document.getElementById('gitacommentresults');
+		//console.log(obj);
 		var DOMDocumentFragment = domJSON.toDOM(obj);
-		//someDOMElement.parentNode.replaceChild(DOMDocumentFragment, someDOMElement);
-		$('#gitacommentresults').html(DOMDocumentFragment);
+		$('#sgiresults').html(DOMDocumentFragment);
 	}); 
 	
 	
 	
 });
 </script>
-
-<div id="gitacommentresults" align="center"></div>
+<div class="middler" id="buddhism" style="display:block">
+    <h1>Buddhism in Daily Life from
+      <a href="http://www.sgi.org/about-us/buddhism-in-daily-life/">SGI</a>
+    </h1>
+<div id="sgiresults" align="center"></div>
+</div>
 </body>
 </html>
