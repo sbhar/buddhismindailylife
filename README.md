@@ -6,7 +6,8 @@ JSON must be generated using domJSON.js by Alex Zaslavsky
 
 Example code to convert to json
 ```
-var jsonOutput = domJSON.toJSON(myDiv, {
+var myDiv = document.getElementById('myDiv');
+var jsonexample = domJSON.toJSON(myDiv, {
 	domProperties: [false, false, false],
 	metadata: false
 });
