@@ -713,6 +713,7 @@
 		//Create the node, if possible
 		if (obj.nodeType) {
 			var node = createNode(obj.nodeType, doc, obj);
+			//console.log(node);
 			parent.appendChild(node);
 		} else {
 			return false;
@@ -746,10 +747,11 @@
 				}*/
 				for (var key in obj.attributes) {
 				  if (obj.attributes.hasOwnProperty(key)) {
-					  console.log(key);
-					  if(key==='"' || 'india,') {
+					  //console.log(key);
+					  if((key==='"') || (key==='india,') || (key==='malaysia"')) {
 					  }else{
 					  node.setAttribute(key, obj.attributes[key]);
+					  //console.log(key);
 					  }
 				  }
 				}
