@@ -11,7 +11,6 @@ var jsonexample = domJSON.toJSON(myDiv, {
 	domProperties: [false, false, false],
 	metadata: false
 });
-
 ```
 Example of converted JSON:
 ```
